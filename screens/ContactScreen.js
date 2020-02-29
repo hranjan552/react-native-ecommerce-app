@@ -24,19 +24,6 @@ export default function ContactScreen(props) {
     phoneNumber2 = `tel:${phoneNumber2}`;
   }
 
-  const showMode = currentMode => {
-    setShow(true);
-    setMode(currentMode);
-  };
-
-  const showDatepicker = () => {
-    showMode('date');
-  };
-
-  const showTimepicker = () => {
-    showMode('time');
-  };
-
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
       <ScrollView>
